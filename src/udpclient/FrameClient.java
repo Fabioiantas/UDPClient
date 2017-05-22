@@ -369,7 +369,7 @@ public class FrameClient extends javax.swing.JFrame{
     private void BtLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtLogoutActionPerformed
         Integer confirmation;
         String resposta;
-        frame.SetDebug("action=logout / MessageToServer: "+"5#");
+        SetDebug("action=logout / MessageToServer: "+"5#");
         if(connection){
             try {
                 SetStatus(false);
@@ -395,7 +395,7 @@ public class FrameClient extends javax.swing.JFrame{
                     //frame.SetDebug("action=DirectMessage / MessageToServer: "+"3#"+sendTo.getIp()+"#"+sendTo.getPort().toString()+"#"+TextMsg.getText());
                     SetChat(null, null, TextMsg.getText().trim());
                 }else
-                    frame.SetDebug("action=BroadcastMessage / MessageToServer: "+"3#"+sendTo.getIp()+"#"+sendTo.getPort().toString()+"#"+TextMsg.getText());
+                    SetDebug("action=BroadcastMessage / MessageToServer: "+"3#"+sendTo.getIp()+"#"+sendTo.getPort().toString()+"#"+TextMsg.getText());
                 send.Send("3#"+sendTo.getIp()+"#"+sendTo.getPort().toString()+"#"+TextMsg.getText()
                          ,server.getIp()
                          ,server.getPort()
