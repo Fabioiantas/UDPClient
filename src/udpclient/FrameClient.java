@@ -86,9 +86,6 @@ public class FrameClient extends javax.swing.JFrame{
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(java.awt.SystemColor.activeCaption);
-
-        jPanel2.setBackground(java.awt.SystemColor.activeCaption);
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Connection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
@@ -165,7 +162,6 @@ public class FrameClient extends javax.swing.JFrame{
                 .addComponent(BtLogout))
         );
 
-        jPanel3.setBackground(java.awt.SystemColor.activeCaption);
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Debug", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
         jPanel3.setMaximumSize(new java.awt.Dimension(32780, 32767));
         jPanel3.setPreferredSize(new java.awt.Dimension(190, 183));
@@ -190,7 +186,6 @@ public class FrameClient extends javax.swing.JFrame{
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel5.setText("CLIENT");
 
-        jPanel5.setBackground(java.awt.SystemColor.activeCaption);
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Online", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         TableUser.setModel(new javax.swing.table.DefaultTableModel(
@@ -244,9 +239,7 @@ public class FrameClient extends javax.swing.JFrame{
         textChat.setRows(5);
         jScrollPane3.setViewportView(textChat);
 
-        BtSend.setBackground(new java.awt.Color(153, 255, 255));
         BtSend.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        BtSend.setForeground(new java.awt.Color(0, 153, 0));
         BtSend.setText("Enviar");
         BtSend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
